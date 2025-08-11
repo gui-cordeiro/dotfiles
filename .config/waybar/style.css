@@ -1,0 +1,122 @@
+* {
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+#waybar {
+  background-color: #1E1B1E;
+  color: #eeeeef;
+  border-bottom: 1px solid #603d6b;
+  font-size: 14px;
+  font-family: "Hack Nerd Font";
+}
+
+#workspaces button {
+  padding: 0 12px;
+  color: #998B99;
+  font-weight: bold;
+  border-radius: 120px;
+}
+
+#workspaces button.focused {
+  color: #eeeeef;
+  margin: 6px 0;
+  padding: 0 12px;
+  background-color: #603d6b;
+}
+
+#custom-appmenu,
+#cpu,
+#temperature,
+#memory,
+#custom-updates {
+  padding: 3px 8px;
+  background-color: #603D6B;
+  border-radius: 30px;
+  margin: 6px 4px;
+}
+
+#workspaces {
+  margin-left: 5px;
+}
+
+#window {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#tray {
+  margin: 0 3px 0 5px;
+}
+
+#custom-updates {
+  color: #80DB00;
+  font-weight: bold;
+}
+
+#custom-powermenu {
+  color: #e06c75;
+  padding: 0 3px 0 10px;
+  margin-right: 10px;
+  font-size: 13pt;
+}
+
+#custom-powermenu:hover {
+  color: white;
+}
+
+#custom-appmenu {
+  font-size: 15pt;
+  padding: 0 20px;
+  margin-left: 10px;
+}
+
+#scratchpad {
+  color: #cffafe;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+#pulseaudio {
+  /* color: #24DB00; */
+  color: #FFFFFF;
+  padding: 5px;
+  margin-right: 12px;
+  font-weight: bold;
+}
+
+#cpu {
+  color: #61afef;
+  font-weight: bold;
+}
+
+#temperature {
+  color: #24DB00;
+  font-weight: bold;
+}
+
+#battery {
+  margin-right: 12px;
+}
+
+#memory {
+  color: #DBDB00;
+  font-weight: bold;
+}
+
+#network {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 9pt;
+}
+
+#clock {
+  color: #fff;
+  margin: 0 5px;
+  /* opacity: 0.7; */
+  font-size: 15px;
+  font-weight: bold;
+}

@@ -1,0 +1,14 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/omni.toml"
+]
+
+[window]
+opacity = 0.9
+
+padding.x = 20
+padding.y = 20
+
+[font]
+normal = { family = "SourceCodePro", style = "Regular" }
+size = 10.0

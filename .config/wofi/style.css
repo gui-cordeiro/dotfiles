@@ -1,0 +1,54 @@
+window {
+margin: 0px;
+border: 1px solid #bd93f9;
+border-radius: 10px;
+background-color: #1E1B1E;
+}
+
+#input {
+margin: 5px;
+border: none;
+color: #f8f8f2;
+background-color: #603D6B;
+}
+
+#inner-box {
+margin: 5px;
+border: none;
+background-color: #1e1b1e;
+}
+
+#outer-box {
+margin: 5px;
+border: none;
+background-color: #1e1b1e;
+}
+
+#scroll {
+margin: 0px;
+border: none;
+}
+
+#text {
+margin: 5px;
+border: none;
+color: #ffffff;
+} 
+
+#entry.activatable #text {
+color: #282a36;
+}
+
+#entry > * {
+color: #f8f8f2;
+}
+
+#entry:selected {
+background-color: #603d6b;
+border-radius: 5px;
+border: 0px solid #FFFFFF
+}
+
+#entry:selected #text {
+font-weight: bold;
+}
