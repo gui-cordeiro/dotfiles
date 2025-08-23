@@ -6,10 +6,10 @@
       "tray",
       "network",
       "sway/scratchpad",
-      "sway/mode"
+      "sway/mode",
       ],
     "modules-center": [
-        "sway/workspaces"
+        "sway/workspaces",
       ],
     "modules-right": [
       //"temperature",
@@ -18,7 +18,7 @@
       "pulseaudio",
       "battery",
       "clock",
-      "custom/powermenu"
+      "custom/powermenu",
     ],
     "tray": {
       "icon-size": 25,
@@ -33,18 +33,26 @@
     "sway/window": {
       "format": "<span>{title}</span>",
       "max-length": 50,
-      "icon": false
+      "icon": false,
+      "rewrite": {
+       "(.*) — Zen Browser": "teste $1",
+       "(.*) - vim": " $1",
+       "(.*) - zsh": " [$1]"
+    }
     },
     "sway/workspaces": {
       "disable-scroll": false,
       "all-outputs": true,
       "format": "{name}",
+      "format-icons": {
+	"urgent": "o"
+      },
       "persistent-workspaces": {
         "1": [],
-	      "2": [],
+	"2": [],
         "3": [],
-  	    "4": [],
-	      "5": []
+  	"4": [],
+	"5": []
       }
     },
     "network": {
@@ -76,7 +84,8 @@
     "custom/powermenu": {
       "format": "",
       "tooltip": false,
-      "on-click": "exec $HOME/.config/rofi/powermenu.sh",
+      // "on-click": "exec $HOME/.config/rofi/powermenu.sh",
+      "on-click": "exec poweroff"
     },
     "custom/appmenu": {
       "format": "",
