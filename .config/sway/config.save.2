@@ -6,8 +6,8 @@
 
 font pango? SourceCodePro Medium 10
 
-gaps inner 3px
-gaps outer 1px
+gaps inner 7px
+gaps outer 3px
 #gaps top -10px
 
 ### Variables
@@ -60,7 +60,7 @@ exec_always ~/scripts/set_random_wallpaper.sh
 # Example configuration:
 #
 input "2:7:SynPS/2_Synaptics_TouchPad" {
-	dwt enable
+	dwt enabled
         tap enabled
         natural_scroll enable
         middle_emulation enabled
@@ -74,7 +74,7 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
 # input "type:keyboard" xkb_option caps:swapescape
 
 # Remover a aceleração do mouse
-input "type:pointer" accel_profile flat
+# input "type:pointer" accel_profile flat
 
 ### Key bindings
 #
@@ -253,7 +253,6 @@ for_window [class="^.*$"] title_border_pixel 0
 
 # Autostart
 exec nm-applet --indicator
-exec firefox
 
 # Window Focus
 #client.focused #A800EB #A800EB #A800EB #A800EB

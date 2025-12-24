@@ -21,7 +21,9 @@
       "custom/powermenu",
     ],
     "tray": {
-      "icon-size": 25,
+      "icon-size": 20,
+      "spacing": 6,
+      "reverse-direction": true
     },
     "sway/scratchpad": {
         "format": "{icon} {count}",
@@ -57,7 +59,8 @@
     },
     "network": {
       "interface": "wlan0",
-      "format": "{ifname}",
+      //"format": "{ifname}",
+      "format": "Sem conexão",
       "format-wifi": "{essid}",
       "format-ethernet": "{ipaddr}/{cidr} 󰊗",
       "format-disconnected": "", //An empty format will hide the module.
@@ -100,7 +103,7 @@
     "pulseaudio": {
       "format": "{icon}  {volume}%",
       "format-bluetooth": "{volume}%  {volume}",
-      "format-muted": "0% ",
+      "format-muted": "{icon}  0%",
       "max-volume": 100,
       "format-icons": {
           "headphone": "",
@@ -109,9 +112,10 @@
           "phone": "",
           "portable": "",
           "car": "",
+	  "muted": "",
           "default": ["", ""]
       },
-      "scroll-step": 5,
+      "scroll-step": 1,
       "on-click": "pavucontrol"
     },
     "clock": {
@@ -121,8 +125,9 @@
     },
     "battery": {
       "bat": "BAT0",
-      "interval": 60,
+      "interval": 15,
       "states": {
+          "attention": 30,
           "warning": 20,
           "critical": 10
       },

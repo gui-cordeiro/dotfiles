@@ -9,7 +9,8 @@
 #waybar {
   background-color: #1E1B1E;
   color: #eeeeef;
-  border-bottom: 1px solid #603d6b;
+  /*border-bottom: 1px solid #603d6b;*/
+  /*border-bottom: 1px solid #FFFFFF;*/
   font-size: 14px;
   font-family: "Hack Nerd Font";
 }
@@ -100,6 +101,14 @@
 
 #battery {
   margin-right: 12px;
+}
+
+#battery.attention {
+  color: yellow;
+}
+
+#battery.critical {
+  color: red;
 }
 
 #memory {
